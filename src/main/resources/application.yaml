@@ -1,0 +1,15 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: policy-governance-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+opa:
+  base-url: ${OPA_BASE_URL:http://localhost:8181}
